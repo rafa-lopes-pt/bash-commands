@@ -57,3 +57,5 @@ git pull origin main
 code .
 
 echo "Done"
+sleep 5
+exit
