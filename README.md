@@ -8,6 +8,7 @@ Since my main OS is linux...I'm not sure about compatibility with the window's s
 
 ## Setup
 1. Download these files to your machine (maybe create a specific folder or something to store them)
+    - *the folder linked to this repository is not a good place*
 2. Open the files in vscode and edit them (instructions on each file)
 3. Read this [link](https://www.geeksforgeeks.org/custom-commands-linux-terminal/) about setting custom commands on linux
    - the command should look something like this:   `alias setupbe='<FILE_PATH>/setupbe.sh';`
@@ -15,6 +16,7 @@ Since my main OS is linux...I'm not sure about compatibility with the window's s
 
 ## Usage
 If you set up these files properly, the commands should be available globally, allowing you to do this:
+
 1. Open your terminal
 2. type `setupbe`
     - paste the ssh url from your repo
