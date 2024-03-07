@@ -5,10 +5,18 @@
 # Date: March 2024
 #
 
-#Globals
+#========================= EDIT THESE FIELDS ONLY
+#DIR -> It's the default directory for your exercises
 DIR=~/Desktop/Coding/Boolean
+#DEFAULT_FOLDER -> 
+#It's the default folder name for an exercise. 
+#If you want to create a new exercise without deleting the last one, 
+#a counter will be added to the name
+#i.e.    ./ex   ./ex1  ./ex2 ... etc
 DEFAULT_FOLDER=ex
+#DEFAULT_REMOTE NAME -> If you don't know what this is... get some practice first with git!
 GIT_REMOTE_NAME=origin
+#========================= DO NOT EDIT BELLOW THIS LINE
 
 clear
 
