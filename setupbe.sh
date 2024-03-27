@@ -5,6 +5,13 @@
 # Date: March 2024
 #
 
+#========================= INSTALATION NOTE
+# When setting up the alias for this script, call it with the following:
+#
+#               &&  if [ $? -eq 0 ];then exit; fi;
+#
+# in order to automatically close the shell if the setup finished without errors
+
 #========================= EDIT THESE FIELDS ONLY
 #DIR -> It's the default directory for your exercises
 DIR=~/Desktop/Coding/Boolean
@@ -46,6 +53,17 @@ cd $FOLDER_NAME
 
 git init
 read -p "Enter the repo url: " GIT_URL 
+
+#Check if ssh is comming from the boolean repo or the users fork
+if [[ $GIT_URL =~ "boolean-uk" ]]
+then
+    clear
+    echo "You need to fork the repository first!"
+    cd ..
+    rm -rf ./$FOLDER_NAME
+    echo "All operations undone."
+    exit 1
+fi
 
 git remote add $GIT_REMOTE_NAME $GIT_URL
 
